@@ -6,9 +6,7 @@ const Scene = ({ children, ...props }: PropsWithChildren) => {
   return (
     <Canvas {...props}>
       <ambientLight />
-      <pointLight position={[5, 5, 5]} intensity={5} />
-      <axesHelper args={[10]} />
-      <Controls />
+      <pointLight position={[5, 5, 5]} intensity={1} />
       {children}
     </Canvas>
   );

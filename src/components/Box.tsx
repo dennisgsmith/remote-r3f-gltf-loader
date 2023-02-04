@@ -11,8 +11,9 @@ const Box = () => {
 
   return (
     <mesh ref={boxRef}>
-      <boxGeometry args={[1, 1, 1]} />
-      <meshStandardMaterial color='orange' />
+      {/* <boxGeometry args={[1, 1, 1]} /> */}
+      <sphereGeometry args={[1]} />
+      <meshStandardMaterial color='orange' wireframe />
     </mesh>
   );
 };
